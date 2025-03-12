@@ -231,8 +231,8 @@ class JitModelAnalysis:
         self._stats: Optional[Statistics] = None
 
         self._ignored_ops: Set[str] = copy(_IGNORED_OPS)
-        self.unsupported_ops_warnings(True)
-        self.uncalled_modules_warnings(True)
+        self.unsupported_ops_warnings(False)
+        self.uncalled_modules_warnings(False)
         self.tracer_warnings("no_tracer_warning")
         self.ancestor_mode("owner")
 
